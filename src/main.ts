@@ -116,3 +116,21 @@ console.log(
   "¿Se debe activar el protocolo de urgencia?",
   activarProtocoloUrgencia(pacientes)
 );
+
+// Apartado 3: Reasignar los pacientes de Pediatría a Médico de Familia
+
+const reasignaPacientesAMedicoFamilia = (
+  pacientes: Pacientes[]
+): Pacientes[] => {
+  return pacientes.map((paciente) => {
+    if (paciente.especialidad === "Pediatra") {
+      return { ...paciente, especialidad: "Medico de familia" };
+    }
+    return paciente;
+  });
+};
+
+console.log(
+  "Listado de pacientes con reasignación de Pediatría a Médico de Familia:",
+  reasignaPacientesAMedicoFamilia(pacientes)
+);

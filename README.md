@@ -19,5 +19,10 @@ Para ambos casos usamos _filter_ para que se nos devuelva un nuevo array con los
 
 ## Apartado 2
 
-Activar `rptocolo de emergencia si CUALQUIER paciente presenta: ritmo cardiaco superior a 100 pulsaciones/minuto + temperatura >39 grados.
+Activar protocolo de emergencia si CUALQUIER paciente presenta: ritmo cardiaco superior a 100 pulsaciones/minuto + temperatura >39 grados.
 Usamos _some_.
+
+## Apartado 3
+
+Reasignar los pacientes de la especialidad _Pediatría_ a la de _Médico de familia_.
+Usamos _map_.
