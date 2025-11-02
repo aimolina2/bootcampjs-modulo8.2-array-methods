@@ -9,7 +9,7 @@ Pasos:
 - Ejecuta el sandbox con `npm run dev`.
 - Abre el navegador en `http://localhost:5173/` (si ese puerto no te funciona, mira en la consola donde has hecho el build, puede que este ocupado y se haya abierto en otro puerto).
 
-## 1. Apartado 1
+## Apartado 1
 
 a. Lista de pacientes asignados a la especialidad _Pediatría_.
 
@@ -31,3 +31,8 @@ Usamos _map_.
 
 Comprobar si en la lista hay pacientes asignados a _Pediatría_
 Usamos _some_.
+
+## Apartado 5
+
+Número total de pacientes asignados a cada especialidad
+Usamos _reduce_.
