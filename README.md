@@ -26,3 +26,8 @@ Usamos _some_.
 
 Reasignar los pacientes de la especialidad _Pediatría_ a la de _Médico de familia_.
 Usamos _map_.
+
+## Apartado 4
+
+Comprobar si en la lista hay pacientes asignados a _Pediatría_
+Usamos _some_.

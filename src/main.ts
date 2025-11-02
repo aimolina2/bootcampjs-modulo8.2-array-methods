@@ -134,3 +134,14 @@ console.log(
   "Listado de pacientes con reasignación de Pediatría a Médico de Familia:",
   reasignaPacientesAMedicoFamilia(pacientes)
 );
+
+// Apartado 4: Comprobar si hay pacientes asignados a Pediatría
+
+const HayPacientesDePediatria = (pacientes: Pacientes[]): boolean => {
+  return pacientes.some((paciente) => paciente.especialidad === "Pediatra");
+};
+
+console.log(
+  "¿Hay pacientes asignados a Pediatría?",
+  HayPacientesDePediatria(pacientes)
+);
