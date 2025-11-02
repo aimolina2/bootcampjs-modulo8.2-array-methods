@@ -16,3 +16,8 @@ a. Lista de pacientes asignados a la especialidad _Pediatría_.
 b. Lista de pacientes asignados a _Pediatría_ y cuya edad sea menor de 10 años.
 
 Para ambos casos usamos _filter_ para que se nos devuelva un nuevo array con los elementos que cumplen con la condición establecida.
+
+## Apartado 2
+
+Activar `rptocolo de emergencia si CUALQUIER paciente presenta: ritmo cardiaco superior a 100 pulsaciones/minuto + temperatura >39 grados.
+Usamos _some_.
