@@ -36,3 +36,7 @@ Usamos _some_.
 
 Número total de pacientes asignados a cada especialidad
 Usamos _reduce_.
+
+## Refactorización
+
+Hay muchos `return`que podemos eliminar para dejar el código más limpio.

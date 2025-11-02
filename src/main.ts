@@ -78,9 +78,9 @@ const pacientes: Pacientes[] = [
 
 const obtenPacientesAsignadosAPediatria = (
   pacientes: Pacientes[]
-): Pacientes[] => {
-  return pacientes.filter((paciente) => paciente.especialidad === "Pediatra");
-};
+): Pacientes[] =>
+  pacientes.filter((paciente) => paciente.especialidad === "Pediatra");
+
 console.log(
   "Listado de pacientes de la especialidad Pediatría:",
   obtenPacientesAsignadosAPediatria(pacientes)
@@ -90,11 +90,11 @@ console.log(
 
 const obtenPacientesAsignadosAPediatriaYMenorDeDiezAnios = (
   pacientes: Pacientes[]
-): Pacientes[] => {
-  return pacientes.filter(
+): Pacientes[] =>
+  pacientes.filter(
     (paciente) => paciente.especialidad === "Pediatra" && paciente.edad < 10
   );
-};
+
 console.log(
   "Listado de pacientes de la especialidad Pediatría con menos de 10 años:",
   obtenPacientesAsignadosAPediatriaYMenorDeDiezAnios(pacientes)
@@ -119,16 +119,13 @@ console.log(
 
 // Apartado 3: Reasignar los pacientes de Pediatría a Médico de Familia
 
-const reasignaPacientesAMedicoFamilia = (
-  pacientes: Pacientes[]
-): Pacientes[] => {
-  return pacientes.map((paciente) => {
+const reasignaPacientesAMedicoFamilia = (pacientes: Pacientes[]): Pacientes[] =>
+  pacientes.map((paciente) => {
     if (paciente.especialidad === "Pediatra") {
       return { ...paciente, especialidad: "Medico de familia" };
     }
     return paciente;
   });
-};
 
 console.log(
   "Listado de pacientes con reasignación de Pediatría a Médico de Familia:",
@@ -137,9 +134,8 @@ console.log(
 
 // Apartado 4: Comprobar si hay pacientes asignados a Pediatría
 
-const HayPacientesDePediatria = (pacientes: Pacientes[]): boolean => {
-  return pacientes.some((paciente) => paciente.especialidad === "Pediatra");
-};
+const HayPacientesDePediatria = (pacientes: Pacientes[]): boolean =>
+  pacientes.some((paciente) => paciente.especialidad === "Pediatra");
 
 console.log(
   "¿Hay pacientes asignados a Pediatría?",
